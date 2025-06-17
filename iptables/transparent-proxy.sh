@@ -1,4 +1,6 @@
 #!/bin/bash
+# Redirect all network traffic through redsocks proxy
+
 sysctl -w net.ipv4.ip_forward=1
 
 iptables -F
